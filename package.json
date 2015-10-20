@@ -1,0 +1,38 @@
+{
+  "name": "shopify-admin-ui-react",
+  "version": "0.0.1",
+  "description": "React.js components for Shopify's backend Admin interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "build": "browserify ./example/index.js -t babelify --outfile ./example/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reggi/shopify-admin-ui-react.git"
+  },
+  "keywords": [
+    "react",
+    "shopify",
+    "admin",
+    "reactjs",
+    "react.js",
+    "components",
+    "ui",
+    "ux"
+  ],
+  "author": "Thomas Reggi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reggi/shopify-admin-ui-react/issues"
+  },
+  "homepage": "https://github.com/reggi/shopify-admin-ui-react#readme",
+  "dependencies": {
+    "react": "^0.14.0"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "react-dom": "^0.14.0",
+    "reactify": "^1.1.1"
+  }
+}
