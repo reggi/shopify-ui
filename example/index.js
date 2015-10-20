@@ -1,10 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {ShopifyTabs} from '../index'
+import {ShopifyTabs, ShopifyContainer, ShopifySearchFilter} from '../index'
 
 let Demo = () => {
   return (
-    <ShopifyTabs/>
+    <ShopifyContainer>
+      <ShopifyTabs tabs={[
+        {
+          text: 'Hello',
+          active: true
+        },
+        {
+          text: 'World',
+          active: false
+        }
+      ]}/>
+      <ShopifySearchFilter inputPlaceholder='Hello World'/>
+    </ShopifyContainer>
   )
 }
 

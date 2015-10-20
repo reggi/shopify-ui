@@ -5,7 +5,7 @@ let ShopifyTabs = ({tabs, children}) => {
   let value
   if (children) {
     value = (children)
-  } else {
+  } else if (tabs) {
     value = tabs.map(function (tab, index) {
       return <ShopifyTab {...tab} key={index}/>
     })
@@ -18,7 +18,8 @@ let ShopifyTabs = ({tabs, children}) => {
 }
 
 ShopifyTabs.propTypes = {
-  tabs: PropTypes.arrayOf(PropTypes.shape(ShopifyTab.propTypes)).isRequired
+  tabs: PropTypes.arrayOf(PropTypes.shape(ShopifyTab.propTypes)),
+  children: PropTypes.node
 }
 
 export default ShopifyTabs

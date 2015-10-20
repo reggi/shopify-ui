@@ -15,8 +15,8 @@ let ShopifyTab = (props) => {
 }
 
 ShopifyTab.propTypes = {
-  active: PropTypes.bool.isRequired,
-  href: PropTypes.string.isRequired,
+  active: PropTypes.bool,
+  href: PropTypes.string,
   text: PropTypes.string,
   children: PropTypes.node
 }
