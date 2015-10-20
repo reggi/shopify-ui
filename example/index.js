@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {ShopifyTabs, ShopifyContainer, ShopifySearchFilter} from '../index'
+import {ShopifyTabs, ShopifyContainer, ShopifySearchFilter, ShopifyTableFlat} from '../index'
 
 let Demo = () => {
   return (
@@ -16,6 +16,25 @@ let Demo = () => {
         }
       ]}/>
       <ShopifySearchFilter inputPlaceholder='Hello World'/>
+      <ShopifyTableFlat headings={[
+        {
+          prop: 'animal',
+          text: 'Animal'
+        },
+        {
+          prop: 'age',
+          text: 'Age'
+        }
+      ]} rows={[
+        {
+          animal: 'Tiger',
+          age: 29
+        },
+        {
+          age: 19,
+          animal: 'Pengunin'
+        }
+      ]}/>
     </ShopifyContainer>
   )
 }
