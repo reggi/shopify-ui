@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "standard",
-    "build": "browserify ./example/index.js -t [ babelify --stage 0 ] --outfile ./example/bundle.js"
+    "build": "browserify ./example/index.js -t [ babelify --stage 0 ] --outfile ./example/bundle.js",
+    "prepublish": "babel --stage 0 -d ./lib/ ./src/"
   },
   "repository": {
     "type": "git",
