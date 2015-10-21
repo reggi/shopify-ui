@@ -1,0 +1,341 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.shopify.com/s/assets/admin/style-fbcba2bedee582049a0a8b26a9fbc56f.css">
+</head>
+<body>
+<div id="products-index" refresh="products-index" class="page products-page has-contextual-help">
+
+
+
+  <a href="/admin/product_imports/new" define="{importProductsModal: new Shopify.Modal(this)}" type="text/html" class="modal_source" style="display: none"></a>
+
+
+    <div class="next-grid next-grid--outer-grid">
+      <div class="next-grid__cell">
+        <div class="next-card">
+          <div class="has-bulk-actions">
+
+
+
+
+<div define="{filterer: new Shopify.FilterSelector([&quot;products&quot;, 'saved-search-tab-bar', 'saved-search-actions-next'], {&quot;query&quot;:null})}" context="filterer">
+    <ul class="next-tab__list" id="saved-search-tab-bar" refresh="saved-search-tab-bar" role="tablist">
+      <li role="presentation">
+        <a class="next-tab next-tab--is-active" tabindex="0" role="tab" aria-selected="true" href="/admin/products">All Products</a>
+      </li>
+
+
+
+      <li class="next-tab__list__disclosure-item dropdown-container">
+        <span class="next-tab next-tab--disclosure" tabindex="-1" aria-selected="false" data-dropdown="~ .dropdown">
+          <i class="ico ico-16-svg ico-chevron-down-blue"></i>
+        </span>
+        <div class="dropdown">
+          <ul class="next-tab__list next-tab__list--vertical" role="tablist">
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+  <div class="next-card__section next-card__section--no-bottom-spacing">
+
+    <div class="obj-filter hide-when-printing table-filter-container  show-saved-search-actions">
+      <div class="next-input-wrapper"><label class="next-label"></label><div class="next-field__connected-wrapper">
+        <div class="next-field--connected--no-flex">
+  <div class="next-popover__container">
+      <button name="button" type="button" class="btn btn obj-filter-btn" data-dropdown="~ .next-popover" id="next-popover-activator--2" aria-expanded="false" aria-haspopup="true" aria-owns="next-popover--2" aria-controls="next-popover--2">Filter products <i class="ico ico-16x8 ico-disclosure"></i></button>
+<div class="next-popover next-popover--align-to-edge" data-popover-css-vertical-margin="15" data-popover-css-horizontal-margin="20" data-popover-css-max-height="300" data-popover-css-max-width="10000" id="next-popover--2" aria-labelledby="next-popover-activator--2" aria-expanded="false" style="max-width: none; margin-right: 0px; margin-left: 0px;"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content">
+        <div class="next-popover__section">
+      <div class="add-filters">
+        <form bind-event-submit="submit(event)" class="clearfix">
+          <p class="filter-heading">Show all products where:</p>
+          <div class="filter-builder">
+            <div class="next-input-wrapper--half-spacing">
+              <div class="next-input-wrapper"><label class="next-label helper--visually-hidden" for="filter-select-1">Select a filter</label><div class="next-select__wrapper"><select name="filter-select-1" id="filter-select-1" bind="filterHandle" bind-event-change="resetFilter()" class="next-select"><option value="">Select a filter...</option><option value="published_status-visibility">Visibility</option>
+<option value="product_type-product_type">Product type</option>
+<option value="vendor-product_vendor">Product vendor</option>
+<option value="tag-tagged_with">Tagged with</option></select></div></div>
+            </div>
+
+              <div bind-show="filterHandle == &quot;published_status-visibility&quot;" class="hide">
+                  <label class="next-label" for="filter-input_">is</label>
+
+                  <div class="next-input-wrapper--half-spacing">
+                    <div class="next-input-wrapper"><label class="next-label helper--visually-hidden" for="filter-select-3">Select a value</label><div class="next-select__wrapper"><select name="filter-select-3" id="filter-select-3" bind="option" class="next-select"><option value="">Select a value...</option><option value="online_store:visible">visible on Online Store</option>
+<option value="online_store:hidden">hidden on Online Store</option></select></div></div>
+                  </div>
+
+                <div class="next-input-wrapper--vertical-block">
+                  <button name="button" type="submit" class="btn btn-slim add-filter filtering-complete">Add filter</button>
+                </div>
+              </div>
+              <div bind-show="filterHandle == &quot;product_type-product_type&quot;" class="hide">
+                  <label class="next-label" for="filter-input_">is</label>
+
+                  <div class="next-input-wrapper--half-spacing">
+                    <div class="next-input-wrapper"><label class="next-label helper--visually-hidden" for="filter-select-3">Select a value</label><div class="next-select__wrapper"><select name="filter-select-3" id="filter-select-3" bind="option" class="next-select"><option value="">Select a value...</option><option value="Event Campfire">Event Campfire</option>
+<option value="Event Campfire Past">Event Campfire Past</option>
+<option value="Event Class">Event Class</option>
+<option value="Event Class Past">Event Class Past</option>
+<option value="Event Dinner">Event Dinner</option>
+<option value="Event Dinner Past">Event Dinner Past</option>
+<option value="Frame">Frame</option>
+<option value="Gift Set">Gift Set</option>
+<option value="Kit">Kit</option>
+<option value="Letterpress Cards">Letterpress Cards</option>
+<option value="Letterpress Posters">Letterpress Posters</option>
+<option value="Letterpress Print">Letterpress Print</option>
+<option value="Prints">Prints</option>
+<option value="Rent">Rent</option>
+<option value="Screenprint Posters">Screenprint Posters</option></select></div></div>
+                  </div>
+
+                <div class="next-input-wrapper--vertical-block">
+                  <button name="button" type="submit" class="btn btn-slim add-filter filtering-complete">Add filter</button>
+                </div>
+              </div>
+              <div bind-show="filterHandle == &quot;vendor-product_vendor&quot;" class="hide">
+                  <label class="next-label" for="filter-input_">is</label>
+
+                  <div class="next-input-wrapper--half-spacing">
+                    <div class="next-input-wrapper"><label class="next-label helper--visually-hidden" for="filter-select-3">Select a value</label><div class="next-select__wrapper"><select name="filter-select-3" id="filter-select-3" bind="option" class="next-select"><option value="">Select a value...</option><option value="Andrew Martis">Andrew Martis</option>
+<option value="Dave Radparvar">Dave Radparvar</option>
+<option value="Helen Williams">Helen Williams</option>
+<option value="Holstee">Holstee</option>
+<option value="Martin Azambuja">Martin Azambuja</option>
+<option value="Michelle Ward">Michelle Ward</option>
+<option value="Monica &amp; Adam Pirani">Monica &amp; Adam Pirani</option>
+<option value="Monica McCarthy">Monica McCarthy</option>
+<option value="Various">Various</option>
+<option value="Vincent Lai">Vincent Lai</option></select></div></div>
+                  </div>
+
+                <div class="next-input-wrapper--vertical-block">
+                  <button name="button" type="submit" class="btn btn-slim add-filter filtering-complete">Add filter</button>
+                </div>
+              </div>
+              <div bind-show="filterHandle == &quot;tag-tagged_with&quot;" class="hide">
+
+                  <div class="next-input-wrapper--half-spacing">
+                    <div class="next-input-wrapper"><label class="next-label helper--visually-hidden" for="filter-input">Filter Input</label><input type="text" name="filter-input" id="filter-input" bind="value" bind-class="{error: !valid()}" class="next-input"></div>
+                  </div>
+
+                <div class="next-input-wrapper--vertical-block">
+                  <button name="button" type="submit" class="btn btn-slim add-filter filtering-complete">Add filter</button>
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+</div></div></div></div></div></div>
+
+
+        <form class="next-form next-form--full-width" bind-event-input="submitQuery()" bind-event-submit="submitQuery()" action="/admin/products" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="QvSd6AsBsyPGgXxPcEVaXFgmO67vI5aaqModcHWyUmcyPTwa12Ssrqrlc1mSNiDxOZt8RaCXY1SwcjixudFUcg==">
+          <label class="next-label helper--visually-hidden" for="query">Query</label><div class="next-input--stylized next-field--connected"><span class="next-input__add-on next-input__add-on--before"><svg class="next-icon next-icon--16 next-icon--slate-lightest"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-search-16"></use></svg></span><input type="text" name="query" id="query" placeholder="Start typing to search for products..." bind="query" class="next-input next-input--invisible"></div>
+</form>          <div class="segmented next-field--connected--no-flex saved-search-actions-next" id="saved-search-actions-next" refresh="saved-search-actions-next">
+          </div>
+</div></div>    </div>
+
+
+  </div>
+</div>
+
+            <div id="products-results" refresh="products">
+                <div class="next-card__section">
+                  <div class="table-wrapper">
+                    <table id="all-products" class="table-hover expanded" define="{
+                      bulkOperations: new Shopify.BulkOperations({
+                        path: &quot;\/admin\/products\/set&quot;,
+                        parameterName: 'product_ids'
+                      }, this),
+                    }">
+                      <thead>
+                        <tr>
+                          <th class="select">
+                            <span context="bulkOperations">
+  <div class="tooltip tooltip-left-align tooltip-bottom bulk-actions__select-all-tooltip">
+  <div class="next-input-wrapper bulk-actions__select-all btn--select-all" bind-class="{'bulk-actions__select-all--has-selected-items': selectedItems().length > 0}"><label bind-class="{'btn btn-slim bulk-actions__select-all-btn': selectedItems().length == 0, 'helper--visually-hidden': selectedItems().length > 0}" class="next-label next-label--switch btn btn-slim bulk-actions__select-all-btn" for="bulk-actions__select-all"><span class="helper--visually-hidden">Select all products</span></label><input type="checkbox" name="bulk-actions__select-all" id="bulk-actions__select-all" value="" class="next-checkbox js-no-dirty bulk-actions__select-all-checkbox" bind-event-click="bulkActionChecked(this)"><span class="next-checkbox--styled"></span></div>
+  <div class="tooltip-container" bind-class="{'hide': selectedItems().length > 0}">
+    <span class="tooltip-label">Select all products</span>
+  </div>
+</div>
+
+<div class="bulk-actions " bind-class="{'bulk-actions--is-visible': selectedItems().length > 0}" style="width: 955px;">
+  <ul class="segmented">
+    <li>
+      <a class="btn btn-slim btn-disabled btn--selection">
+        <span class="selection-count">
+          <span bind="selectedItemsString(&quot;product&quot;)">0 products</span> selected
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="btn btn-slim" bind-event-click="Shopify.BulkEditor.goToBulkEditor(
+                                                  &quot;Product&quot;,
+                                                  {
+                                                    defaultEditColumns: &quot;variants.sku,variants.price,variants.compare_at_price&quot;,
+                                                    defaultShowColumns: &quot;&quot;,
+                                                    returnTo: &quot;\/admin\/products&quot;,
+                                                    useSearch: true &amp;&amp; (multipageSelected || allSelected()),
+                                                    ids: selectedItems().join(',')
+                                                      , defaultSort: &quot;title asc&quot;
+                                                  })" track-click="{category: 'Bulk editor', action: 'Bulk actions: Edit products'}">
+        Edit products
+      </a>
+    </li>
+    <li>
+      <a class="btn btn-slim" data-dropdown="~ .dropdown">Bulk actions <i class="ico ico-16x8 ico-disclosure"></i></a>
+      <div class="dropdown left-aligned" bind-class="{disabled: isWorking()}">
+
+    <ul>
+
+  <li><a bind-event-click="perform('publish' , {channel_ids: [1219824]})">Publish selected products</a></li>
+  <li><a bind-event-click="perform('unpublish' , {channel_ids: [1219824]})">Hide selected products</a></li>
+
+
+      <li>
+        <script define="{bulkDeleteProductsModal: new Shopify.Modal(this)}" type="text/html" class="modal_source"><header>
+  <h2>
+    Delete
+    <span bind-show="multipageSelected">all</span>
+    <span bind="selectedItemsString(&quot;product&quot;)"></span><span bind-show="multipageSelected &amp;&amp; hasSearch()"> matching your search</span>?
+  </h2>
+  <a href="#" class="close-modal">x</a>
+</header>
+<form bind-event-submit="perform('destroy')" define="{deleteConfirmationModal: new Shopify.Form(this)}">
+  <div class="body">
+    <p>
+       Deleted products cannot be recovered. Do you still want to continue?
+    </p>
+  </div>
+  <div class="buttons">
+    <a class="btn close-modal" href="#">Cancel</a>
+    <button type="submit" class="btn btn-destroy-no-hover js-btn-loadable">
+      Delete <span bind="objectName"></span>
+    </button>
+  </div>
+</form>
+</script>
+        <a bind-event-click="bulkDeleteProductsModal.show()">Delete selected products</a>
+      </li>
+      <li class="break-top">
+        <a href="/admin/products/bulk_tag?operation=tag" define="{bulkTagModal: new Shopify.Modal(this)}" type="text/html" class="modal_source" style="display: none"></a>
+        <a bind-event-click="bulkTagModal.show()">Add tags</a>
+      </li>
+      <li>
+        <a href="/admin/products/bulk_tag?operation=untag" define="{bulkUntagModal: new Shopify.Modal(this)}" type="text/html" class="modal_source" style="display: none"></a>
+        <a bind-event-click="bulkUntagModal.show()">Remove tags</a>
+      </li>
+      <li class="break-top">
+        <script define="{bulkAddCollectionsModal: new Shopify.Modal(this)}" type="text/html" class="modal_source">
+          <div define="{ productCollections: new Shopify.BulkProductCollections($context) }">
+  <header>
+    <h2>
+      Add
+      <span bind-show="multipageSelected">all</span>
+      <span bind="selectedItemsString('product')"></span><span bind-show="multipageSelected && hasSearch()"> matching your search</span>?
+    </h2>
+    <a href="#" class="close-modal">x</a>
+  </header>
+
+  <div id="partial_container">
+    <a href="/admin/custom_collections/dropdown?modal=add" define="{dropdownPartial: new Shopify.ResourceDropdown(this, &#39;partial_container&#39;)}" type="text/html" style="display: none"></a>
+  </div>
+</div>
+
+</script>        <a bind-event-click="bulkAddCollectionsModal.show(), dropdownPartial.renderDropdown(event)">Add to collection</a>
+      </li>
+      <li>
+        <script define="{bulkRemoveCollectionsModal: new Shopify.Modal(this)}" type="text/html" class="modal_source">
+          <div define="{ productCollections: new Shopify.BulkProductCollections($context) }">
+  <header>
+    <h2>
+      Remove
+      <span bind-show="multipageSelected">all</span>
+      <span bind="selectedItemsString('product')"></span><span bind-show="multipageSelected && hasSearch()"> matching your search</span>?
+    </h2>
+    <a href="#" class="close-modal">x</a>
+  </header>
+
+  <div id="partial_container">
+    <a href="/admin/custom_collections/dropdown?modal=remove" define="{dropdownPartial: new Shopify.ResourceDropdown(this, &#39;partial_container&#39;)}" type="text/html" style="display: none"></a>
+  </div>
+</div>
+
+</script>        <a bind-event-click="bulkRemoveCollectionsModal.show(), dropdownPartial.renderDropdown(event)">Remove from collection</a>
+      </li>
+    </ul>
+
+
+      </div>
+    </li>
+  </ul>
+
+  <span class="bulk-select-all">
+    <p class="bulk-action-all-selector hide" bind-show="allSelected()">
+      All products <span bind-show="!multipageSelected" class="">on this page</span> are selected.
+    </p>
+  </span>
+</div>
+</span>
+
+                          </th>
+                          <th class="image"></th>
+                          <th class="title is-sortable sorted-asc" bind-event-click="filterer.sort('title')">
+                            <span>Product</span>
+                          </th>
+                          <th class="right inventory is-sortable " bind-event-click="filterer.sort('inventory_total')">
+                            <span>Inventory</span>
+                          </th>
+                          <th class="product_type is-sortable " bind-event-click="filterer.sort('product_type')">
+                            <span>Type</span>
+                          </th>
+                          <th class="vendor is-sortable " bind-event-click="filterer.sort('vendor')">
+                            <span>Vendor</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody context="bulkOperations">
+                          <tr bind-class="{selected: selected[1194824837]}">
+                            <td class="select">
+                              <div class="next-input-wrapper next-input-wrapper--inline"><label class="next-label helper--visually-hidden next-label--switch" for="product_ids_1194824837">Select product, print</label><input type="checkbox" name="product_ids_1194824837" id="product_ids_1194824837" value="1194824837" bind="selected[1194824837]" bind-event-change="selectionChanged()" class="next-checkbox"><span class="next-checkbox--styled"></span></div>
+                            </td>
+                            <td>
+                              <a class="aspect-ratio aspect-ratio--square aspect-ratio--square--50 aspect-ratio--interactive" href="/admin/products/1194824837">
+                                  <img title="print" class="aspect-ratio__content" src="http://dummyimage.com/50x50/000/fff" alt="7f2f9d6e192f1dadcb6974b6a0f8bc45 thumb">
+</a>                            </td>
+                            <td class="name">
+                              <a href="/admin/products/1194824837">Meow Meow meow</a>
+                              <div></div>
+                            </td>
+                            <td class="total">
+                                <p>
+    <span class="">
+      35
+    </span> in stock
+      for 1 variant
+  </p>
+
+                            </td>
+                            <td class="type">
+                              <p>Prints</p>
+                            </td>
+                            <td class="vendor">
+                              <p>Chops</p>
+                            </td>
+                          </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+</body>
+</html>
