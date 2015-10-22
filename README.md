@@ -1,5 +1,9 @@
 # Shopify Admin Interface React
 
+```
+npm install shopify-ui --save
+```
+
 This is an effort at creating and organizing a library of React.js components that built from Shopify's backend Admin interface, created with the intent of building Shopify Applications with.
 
 ## Ideal World
