@@ -1,5 +1,5 @@
 {
-  "name": "shopify-admin-ui-react",
+  "name": "shopify-ui",
   "version": "0.0.1",
   "description": "React.js components for Shopify's backend Admin interface.",
   "main": "index.js",
