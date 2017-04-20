@@ -1,3 +1,5 @@
+# DEPRECATED SEE [Shopify Polaris](https://github.com/Shopify/polaris)
+
 # Shopify Admin Interface React
 
 ```
